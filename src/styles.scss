@@ -1,0 +1,75 @@
+$second-color: #131010;
+@mixin common-padding {
+  padding: 80px 130px;
+  @media(max-width: 1350px) {
+    padding: 80px 75px;
+  }
+  @media(max-width: 480px) {
+    padding: 80px 40px;
+  }
+}
+@mixin common-font {
+  font-size: 48px;
+  @media(max-width: 768px) {
+    font-size: 36px;
+  }
+  @media(max-width: 480px) {
+    font-size: 24px;
+  }
+}
+@mixin common-font2 {
+  font-size: 24px;
+  @media(max-width: 768px) {
+    font-size: 20px;
+  }
+  @media(max-width: 480px) {
+    font-size: 16px;
+  }
+}
+@mixin margin-font {
+  margin-bottom: 40px;
+  @media(max-width: 768px) {
+    margin-bottom: 20px;
+  }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  color: white;
+}
+h1, h2, h3, h4, h5 {
+  font-size: 36px;
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.button2 {
+    width: 242px;
+    height: 55px;
+    background: transparent;
+    border: 1px solid #201A1A;
+    color: $second-color;
+}
+
+.button1 {
+  width: 242px;
+  height: 55px;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
