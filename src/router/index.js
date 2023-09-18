@@ -41,7 +41,9 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
-})
+  routes,
+  base: process.env.BASE_URL // Установка базового пути из окружения
+});
+
 
 export default router
